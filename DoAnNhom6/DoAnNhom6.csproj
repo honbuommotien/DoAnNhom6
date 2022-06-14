@@ -150,6 +150,9 @@
     <Content Include="Content\images\dongho1.jpg" />
     <Content Include="Content\images\dongho2.jpg" />
     <Content Include="Content\images\dongho3.jpg" />
+    <Content Include="Content\images\dongho4.jpg" />
+    <Content Include="Content\images\dongho5.jpg" />
+    <Content Include="Content\images\dongho6.jpg" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
