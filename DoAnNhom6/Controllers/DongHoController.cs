@@ -77,8 +77,8 @@ namespace DoAnNhom6.Controllers
             else
             {
                 E_dongho.ten = E_ten;
-                E_mota.mota = E_mota;
-                E_hang.hang = E_hang;
+                E_dongho.mota = E_mota;
+                E_dongho.hang = E_mota;
                 E_dongho.gia = E_gia;
                 E_dongho.hinh = E_hinh;
                 E_dongho.ngaycapnhat = E_ngaycapnhat;

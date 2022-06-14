@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DoAnNhom6.Models;
+using PagedList;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,14 @@ namespace DoAnNhom6.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        MyDataDataContext data = new MyDataDataContext();
+        public ActionResult Index(int? page)
         {
-            return View();
+            if (page == null) page = 1;
+            var all_dongho = (from s in data.DongHos select s).OrderBy(m => m.id);
+            int pageSize = 6;
+            int pageNum = page ?? 1;
+            return View(all_dongho.ToPagedList(pageNum, pageSize));
         }
 
         public ActionResult About()
