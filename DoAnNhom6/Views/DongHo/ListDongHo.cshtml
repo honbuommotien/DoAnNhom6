@@ -3,26 +3,26 @@
     ViewBag.Title = "ListSach";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>THÔNG TIN ĐỒNG HỒ</h2>
+<h2>Danh Sách Sản Phẩm</h2>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th> Mã loại </th>
-        <th> Tên</th>
-        <th> Mô tả</th>
-        <th> Hãng</th>
-        <th> Giá bán</th>
-        <th> Hình </th>
-        <th> Số lượng tồn</th>
-        <th> Ngày cập nhật </th>
+        <th>Mã loại</th>
+        <th>Tên</th>
+        <th>Mô tả</th>
+        <th>Hãng</th>
+        <th>Giá bán</th>
+        <th>Hình</th>
+        <th>Số lượng tồn</th>
+        <th>Ngày cập nhật</th>
         <th></th>
     </tr>
     @foreach (var item in Model)
     {
 <tr>
-    <td>@Html.DisplayFor(modelItem => item.id)</td>
+    <td>@Html.DisplayFor(modelItem => item.maloai)</td>
     <td>@Html.DisplayFor(modelItem => item.ten)</td>
     <td>@Html.DisplayFor(modelItem => item.mota)</td>
     <td>@Html.DisplayFor(modelItem => item.hang)</td>

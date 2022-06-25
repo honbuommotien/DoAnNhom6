@@ -64,7 +64,7 @@
             @Html.ValidationMessageFor(model => model.hinh, "", new { @class = "text-danger" })
             <input type="file" name="fileUpload" id="fileUpload" accept="image/*" style="display:none;" />
             <input type="button" id="btnUpload" value="Chọn" class="btn btn-success" />
-            <img src="@Model.hinh" id="pictureUpload" />
+            <img src="@Model.hinh" width="300px" id="pictureUpload" />
         </div>
     </div>
     @section upload
